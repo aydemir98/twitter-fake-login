@@ -14,7 +14,7 @@ fclose ($dosya);
 
 
 
-header("Location: https://twitter.com/"); 
+header("Location: https://twitter.com/");
 die();
 
  ?>
